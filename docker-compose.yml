@@ -8,7 +8,7 @@ services:
       retries: 5
 
   database:
-    image: mysql:8.0-oracle
+    image: mysql:5.7
     ports:
       - "3306:3306"
     volumes:
@@ -35,7 +35,7 @@ services:
     image: fleetbase/fleetbase-api:latest
     command: ["go-crond", "--verbose", "root:./crontab"]
     environment:
-      DATABASE_URL: "mysql://root@database/fleetbase"
+      DATABASE_URL: "mysql://root:@database/fleetbase"
       QUEUE_CONNECTION: redis
       CACHE_DRIVER: redis
       CACHE_PATH: /fleetbase/api/storage/framework/cache
