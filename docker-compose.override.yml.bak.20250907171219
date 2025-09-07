@@ -1,0 +1,7 @@
+services:
+  application:
+    environment:
+      APP_KEY: "base64:9LKr5V3QN9grHFE2ec4vZ7VKSUSCWEE8JEoFZcu0YX4="
+      CONSOLE_HOST: "http://localhost:4200"
+      ENVIRONMENT: "development"
+      APP_DEBUG: "true"
