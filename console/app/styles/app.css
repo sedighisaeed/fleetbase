@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 /* Vazir Font Faces */
 @font-face {
   font-family: 'Vazir';
@@ -54,7 +58,13 @@
   font-style: normal;
 }
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
 @import 'console.css';
+@import 'rtl.css';
+
+/* Language switcher positioning */
+.language-switcher-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
