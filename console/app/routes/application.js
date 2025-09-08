@@ -16,8 +16,6 @@ export default class ApplicationRoute extends Route {
     @service currentUser;
     @service router;
     @service universe;
-    @service rtl; // Add RTL service
-
     @tracked defaultTheme;
 
     /**
@@ -38,7 +36,6 @@ export default class ApplicationRoute extends Route {
     @action activate() {
         this.initializeTheme();
         this.initializeLocale();
-        this.rtl.checkRtlLanguage(); // Initialize RTL
     }
 
     /**
@@ -131,7 +128,6 @@ export default class ApplicationRoute extends Route {
     initializeLocale() {
         const locale = this.currentUser.getOption('locale', 'en-us');
         this.intl.setLocale([locale]);
-        this.rtl.setLocale(locale); // Also set RTL when locale changes
     }
 
     /**

@@ -305,9 +305,6 @@ importers:
       tailwindcss:
         specifier: ^3.4.10
         version: 3.4.17
-      tailwindcss-rtl:
-        specifier: ^0.9.0
-        version: 0.9.0
       tracked-built-ins:
         specifier: ^3.3.0
         version: 3.4.0(@babel/core@7.28.3)
@@ -8293,9 +8290,6 @@ packages:
   table@6.9.0:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
-
-  tailwindcss-rtl@0.9.0:
-    resolution: {integrity: sha512-y7yC8QXjluDBEFMSX33tV6xMYrf0B3sa+tOB5JSQb6/G6laBU313a+Z+qxu55M1Qyn8tDMttjomsA8IsJD+k+w==}
 
   tailwindcss@3.4.17:
     resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
@@ -19798,8 +19792,6 @@ snapshots:
       slice-ansi: 4.0.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
-
-  tailwindcss-rtl@0.9.0: {}
 
   tailwindcss@3.4.17:
     dependencies:
